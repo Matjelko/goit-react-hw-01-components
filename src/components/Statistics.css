@@ -1,0 +1,40 @@
+.statistics__section{
+    margin-top: 70px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    width: 500px;
+    margin-left: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    width: 600px;
+    padding-bottom: 30px;
+}
+
+.statistics__h2{
+    margin: 15px
+}
+
+.statistics__unordered-list{
+    padding: 0px;
+    margin: 0px;
+    width: 500px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics__unordered-list--list-item{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 14px;
+    font-size: 15px;
+}
+
+.statistics__span--font-size{
+    font-size: 20px;
+}

@@ -1,0 +1,42 @@
+.profile__card{
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 100px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__img{
+    height: 120px;
+    background-color:lightgray;
+    border-radius: 100px;
+}
+
+.profile__paragraph--size{
+    font-size: 20px;
+}
+
+.profile__paragraph--padding{
+    padding-bottom: 20px
+}
+
+.profile__unordered-list{
+    margin: 0px;
+    padding: 0px;
+    height: 125px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: lightgray;
+}
+
+.profile__unordered-list--list-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__span--margin{
+    margin-bottom: 10px
+}

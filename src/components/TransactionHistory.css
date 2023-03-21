@@ -1,0 +1,23 @@
+.transaction-history{
+    border-width: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+    width: 1000px;
+    height: 1000px;
+    margin-bottom: 100px;
+}
+
+thead{
+    height: 48px;
+    background-color: aqua;
+}
+
+tr{
+    border-width: 2px;
+    border-style: solid;
+}
+
+th{
+    border-width: 2px;
+    border-style: solid;
+}

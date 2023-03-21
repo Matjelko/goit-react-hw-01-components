@@ -1,0 +1,37 @@
+.friendList__section{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.friendList__unordered-list{
+    padding: 0px;
+    list-style: none;
+}
+
+.friendList__img--margin{
+    margin-bottom: 10px;
+}
+
+.friendList__paragraph--margin{
+    margin: 0px;
+}
+
+.item{
+    padding: 10px;
+    margin: 0px;
+    margin-bottom: 30px;
+    width: 540px;
+    border-width: 2px;
+    border-radius: 100px;
+    border-style: solid;
+    background-color: lightgray;
+}
+
+.is-active{
+    background-color: green;
+}
+
+.is-unactive{
+    background-color: red;
+}

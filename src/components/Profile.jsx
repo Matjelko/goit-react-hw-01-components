@@ -1,81 +1,29 @@
+import "./Profile.css"
+
 export const Profile = ({username, tag, location, avatar, followers, views, likes}) => {
     return (
-        <>
+        <article className="profile__card">
             <div>
-                <img
-                    style={{
-                        height:120,
-                        backgroundColor:'lightgray',
-                        borderRadius: 100
-                    }} 
-                    src={avatar} 
-                    alt="User avatar"
-                />
-                <p
-                    style={{
-                        fontSize: 20,
-                    }}
-                >{username}</p>
+                <img src={avatar} alt="User avatar" className="profile__img"/>
+                <p className="profile__paragraph--size">{username}</p>
                 <p>@{tag}</p>
-                <p
-                    style={{
-                        paddingBottom:20
-                    }}
-                >{location}</p> 
+                <p className="profile__paragraph--padding">{location}</p> 
             </div>
 
-            <ul
-                style={{
-                    margin:0,
-                    padding:0,
-                    height: 125,
-                    display:'flex',
-                    justifyContent:'space-around',
-                    alignItems:'center',
-                    listStyle:'none',
-                    backgroundColor: 'lightgray'
-                }}
-            >
-                <li
-                    style={{
-                        display:'flex',
-                        flexDirection: 'column'
-                    }}
-                >
-                    <span
-                        style={{
-                            marginBottom:10
-                        }}
-                    >Followers</span>
+            <ul className="profile__unordered-list">
+                <li className="profile__unordered-list--list-item">
+                    <span className="profile__span--margin">Followers</span>
                     <span>{followers}</span>
                 </li>
-                <li
-                    style={{
-                        display:'flex',
-                        flexDirection: 'column'
-                    }}
-                >
-                    <span
-                        style={{
-                            marginBottom:10
-                        }}
-                    >Views</span>
+                <li className="profile__unordered-list--list-item">
+                    <span className="profile__span--margin">Views</span>
                     <span>{views}</span>
                 </li>
-                <li
-                    style={{
-                        display:'flex',
-                        flexDirection: 'column'
-                    }}
-                >
-                    <span
-                        style={{
-                            marginBottom:10
-                        }}
-                    >Likes</span>
+                <li className="profile__unordered-list--list-item">
+                    <span className="profile__span--margin">Likes</span>
                     <span>{likes}</span>
                 </li>
             </ul>
-        </>
+        </article>
     );
 };
