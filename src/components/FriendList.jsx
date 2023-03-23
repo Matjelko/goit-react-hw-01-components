@@ -1,5 +1,5 @@
-import { cloneElement } from "react"
-import { FriendListItem } from "./FriendListItem"
+// import { cloneElement } from "react"
+// import { FriendListItem } from "./FriendListItem"
 import clsx from "clsx";
 import "./FriendList.css";
 
