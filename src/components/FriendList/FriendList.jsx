@@ -2,6 +2,7 @@
 // import { FriendListItem } from "./FriendListItem"
 import clsx from "clsx";
 import "./FriendList.css";
+import PropTypes from 'prop-types';
 
 export const FriendList = ({friends}) => {
     return (
@@ -16,7 +17,6 @@ export const FriendList = ({friends}) => {
                         )}
                         key={friend.id}
                     >
-                        {/* <span>{friend.isOnline}</span> */}
                         <img class="avatar" src={friend.avatar} alt="User avatar" width="48" className="friendList__img--margin"/>
                         <p className="friendList__paragraph--margin">{friend.name}</p>
                     </li>
@@ -25,3 +25,14 @@ export const FriendList = ({friends}) => {
         </section>
     )
 }
+
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(
+      PropTypes.shape({
+        key: PropTypes.string,
+        isOnline: PropTypes.bool,
+        avatar: PropTypes.string,
+        name: PropTypes.string
+      })
+    )
+  }
